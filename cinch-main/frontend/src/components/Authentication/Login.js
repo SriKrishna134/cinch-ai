@@ -10,7 +10,7 @@ import {
   chakra,
   Box,
   Link,
-  Avatar,
+
   FormControl,
   FormHelperText,
   InputRightElement,
