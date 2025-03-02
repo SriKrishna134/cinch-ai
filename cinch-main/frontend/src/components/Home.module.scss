@@ -1,0 +1,208 @@
+
+// .home-up-text {
+//   font-size: 5.7rem;
+//   position: relative; /* Required for pseudo-elements */
+//   color: #333; /* Dark gray text */
+//   text-transform: capitalize; /* Capitalize the text */
+//   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+//   margin: 10px 0;
+//   letter-spacing: 0.5px; /* Improve readability */
+//   transition: color 0.3s ease; /* Smooth hover transition */
+  
+//   cursor: pointer;
+//   &:hover {
+//     color: #20b994;
+//     transition: 3s;
+//   }
+// }
+
+.mains-heading {
+  text-align: center;
+  max-width: 1500px;
+  /* margin-left: 2rem; */
+  font-size: 4.3rem;
+  margin-bottom: 1rem; /* Adjust margin to be more reasonable */
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  /* text-transform: capitalize; */
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  position: relative;
+  cursor: pointer;
+}
+
+.mains-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg,#000000d2, #33cc99);
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+.mains-heading:hover {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.0);
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.mains-heading .sass{
+  color: #33cc99;
+}
+.home-up-text {
+
+  text-align: center;
+  font-size: 3.9rem;
+  
+  margin-top: 3rem;
+  margin-bottom: 2.5rem; /* Adjust margin to be more reasonable */
+  color: #2defa5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(90deg, #000000d2, #3c3939);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-up-text::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #000000d2, #3c3939);
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+.home-usp-text:hover {
+  color: #125d98;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.description {
+  font-size: 1.35rem;
+  color: #000000;
+  line-height: 1.8;
+  margin-bottom: 5.3px;
+}
+
+.descriptsion:hover{
+  color: #125d98;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  background: linear-gradient(45deg, #000000d2, #5b5757); /* Gradient background */
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons:hover {
+  background: linear-gradient(45deg, #5b5757, #000000d2); /* Reverse gradient */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.buttons:active {
+  transform: translateY(1px); /* Subtle push-down effect on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.buttons:hover::after {
+  opacity: 1;
+}
+
+
+.headerImage {
+  width: 100%;
+
+}
+
+.headerTitleImage{
+  max-width: 200px;
+  margin-left: 40rem;
+  position: relative;
+  top: -250px;
+}
+
+.cincb {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  background: linear-gradient(45deg, #000000d2, #5b5757);
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cincb:hover {
+  background: linear-gradient(45deg, #5b5757, #000000d2); /* Reverse gradient */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cincb:active {
+  transform: translateY(1px); /* Subtle push-down effect on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cincb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cincb:hover::after {
+  opacity: 1;
+}
+
+.headerWrapper{
+}
