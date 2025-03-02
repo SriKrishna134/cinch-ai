@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { supabaseUrl, supabaseAnonKey, googleSheetUrl } from "../../constants";
+import { supabaseUrl, supabaseAnonKey } from "../../constants";
 import { createClient } from "@supabase/supabase-js";
 import "./ContactPage.css";
 import contactImage from "../../assets/contact.png"
