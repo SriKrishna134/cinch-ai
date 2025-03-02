@@ -7,7 +7,7 @@ import chatContext from "./context/chatContext";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App(props) {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const {  toggleColorMode } = useColorMode();
   const context = useContext(chatContext);
 
   // localStorage.removeItem("token")
