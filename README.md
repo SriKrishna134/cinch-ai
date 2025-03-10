@@ -1,1 +1,1 @@
-## cinch ai
+## cinch-ai
