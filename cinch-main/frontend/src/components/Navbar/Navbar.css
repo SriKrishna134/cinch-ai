@@ -1,0 +1,123 @@
+.navbar-menu{
+    /* background-color:aqua;  */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
+    cursor:pointer;
+    /* font-family: 'Arial', sans-serif; */
+    font-size: large;
+    /* font-weight: bold; */
+}
+
+
+.scroll-button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 5px;  /* Rounded corners */
+  text-align: center;
+  display: inline-block; /* Prevents it from collapsing */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none; /* Removes any unwanted borders */
+}
+
+.scroll-button:hover {
+  background-color: black;
+  color: rgb(254, 252, 252);
+  transition: 1s;
+
+}
+
+
+
+
+.bfgp{
+    width: 40px;
+    height: 40px;
+    
+}
+.active {
+    color: #bdf6d5 !important; /* Ensures the style is applied */
+    font-weight: bold; /* Optional: Makes active link stand out */
+    transition: color 0.3s ease-in-out;
+  }
+  
+
+.ctit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10.9vh; /* Adjust height as needed */
+    background-image: url('../../assets/image.jpg'); /* Make sure the path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensures it stays behind other content */
+  }
+  
+.navbar-menu .active {
+    padding-bottom: 2px;
+    color: hsl(0, 6%, 50%);
+    border-bottom: 2px solid #5c5252; /* Updated to visible color */
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  .signin {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(45deg, #000000d2, #5b5757); /* Gradient background */
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .signin:hover {
+    background: linear-gradient(45deg, #5b5757, #000000d2); /* Reverse gradient */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  @media (max-width: 1050px) {
+    .navbar-menu {
+        gap: 18px;
+        font-size: 15px;
+    }
+    .signin {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        gap: 12px;
+        font-size: 14px;
+    }
+    .scroll-button {
+        padding: 7px 25px;
+        font-size: 0px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none; /* Mobile menu can be handled via a hamburger menu */
+    }
+    .signin {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
